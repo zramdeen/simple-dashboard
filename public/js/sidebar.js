@@ -1,15 +1,14 @@
+// global variables
 const bootstrapTabletWidth = 768
-let mobileState = 0
+let minimizedState = 1
 let sidebar = 0
 
+// get a handle when page loads
 window.onload = function(){
   sidebar = document.getElementById('sidebar')
-
-  // set sidebar style initially
-  mobileState = mobileToggle(bootstrapTabletWidth)
-  toggle()
 }
 
+//  for automatic toggling - feature not implemented
 const mobileToggle = (width) => {
   const screenWidth = window.innerWidth
   
@@ -19,15 +18,16 @@ const mobileToggle = (width) => {
   return false
 }
 
+// for toggling on click
 const toggle = () => {
-  if(mobileState){
-    sidebar.classList.remove("maximized-sidebar")
-    sidebar.classList.add("minimized-sidebar")
-    mobileState = false
-  } else {
+  if(minimizedState){
     sidebar.classList.remove("minimized-sidebar")
     sidebar.classList.add("maximized-sidebar")
-    mobileState = true
+    minimizedState = false
+  } else {
+    sidebar.classList.remove("maximized-sidebar")
+    sidebar.classList.add("minimized-sidebar")
+    minimizedState = true
   }
 }
 
