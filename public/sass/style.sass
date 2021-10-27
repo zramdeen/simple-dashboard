@@ -56,7 +56,10 @@ body
   color: #fff !important
 
 .main
-  margin-left: 200px
+  position: fixed
+  top: 12px
+  left: 200px
+  // margin-left: 200px
   transition: all 0.5s ease
 
 /* sidebar toggle logic */
@@ -65,4 +68,19 @@ body
     left: -150px
   
   ~ .main
-    margin-left: 50px
+    left: 50px
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 767.98px)
+  .sidebar
+    left: -150px
+  
+  .main
+    left: 50px
+
+  #sidebar-toggle:checked
+    ~ .sidebar
+      left: 0px
+    
+    ~ .main
+      left: 50px

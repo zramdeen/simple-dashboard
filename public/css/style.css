@@ -54,7 +54,9 @@ body {
 }
 
 .main {
-  margin-left: 200px;
+  position: fixed;
+  top: 12px;
+  left: 200px;
   transition: all 0.5s ease;
 }
 
@@ -63,7 +65,24 @@ body {
   left: -150px;
 }
 #sidebar-toggle:checked ~ .main {
-  margin-left: 50px;
+  left: 50px;
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    left: -150px;
+  }
+
+  .main {
+    left: 50px;
+  }
+
+  #sidebar-toggle:checked ~ .sidebar {
+    left: 0px;
+  }
+  #sidebar-toggle:checked ~ .main {
+    left: 50px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
