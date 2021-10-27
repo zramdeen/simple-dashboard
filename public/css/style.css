@@ -1,0 +1,69 @@
+/* settings */
+body {
+  background: #232327;
+  color: #fff;
+}
+
+/* sidebar general styles */
+.sidebar {
+  font-weight: 200;
+  width: 200px;
+  height: 100%;
+  background: #202020;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease;
+}
+
+.sidebar label {
+  width: 100%;
+}
+.sidebar label .container {
+  padding: 0;
+}
+
+#sidebar .nav-link {
+  padding-right: 0px;
+  color: #fff;
+  font-size: 20px;
+}
+#sidebar .nav-link span, #sidebar .nav-link i {
+  display: inline-block;
+}
+#sidebar .nav-link span {
+  width: 128px;
+}
+#sidebar .nav-link i {
+  text-align: center;
+  width: 50px;
+  margin-left: auto;
+}
+#sidebar .nav-link:hover {
+  color: #E0E4CC;
+  background: #0d6efd;
+}
+#sidebar .nav-link.active {
+  color: #E0E4CC;
+  background: #0d6efd;
+}
+
+.toggle-btn, .toggle-btn .nav-link {
+  color: #fff !important;
+}
+
+.main {
+  margin-left: 200px;
+  transition: all 0.5s ease;
+}
+
+/* sidebar toggle logic */
+#sidebar-toggle:checked ~ .sidebar {
+  left: -150px;
+}
+#sidebar-toggle:checked ~ .main {
+  margin-left: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */

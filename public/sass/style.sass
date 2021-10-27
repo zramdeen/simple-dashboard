@@ -1,0 +1,68 @@
+/* settings */
+$font-weight: 200
+$sidebarLinkColor: #fff
+$sidebarLinkBackground: #fff
+$sidebarLinkActiveColor: #E0E4CC
+$sidebarLinkActiveBackground: #0d6efd
+$sidebarLinkHoverColor: #E0E4CC
+$sidebarLinkHoverBackground: #0d6efd
+$sidebarBackground: #202020
+  
+body
+  background: rgb(35,35,39)
+  color: #fff
+
+/* sidebar general styles */
+.sidebar
+  font-weight: $font-weight
+  width: 200px
+  height: 100%
+  background: $sidebarBackground
+  position: fixed
+  z-index: 1
+  top: 0
+  left: 0
+  transition: all 0.5s ease
+
+// force label's width
+.sidebar label
+  width: 100%
+  .container
+    padding: 0
+
+// split into left and right
+#sidebar .nav-link
+  padding-right: 0px
+  color: $sidebarLinkColor
+  font-size: 20px
+  span, i
+    display: inline-block
+  span
+    width: 128px
+  i
+    text-align: center
+    width: 50px
+    margin-left: auto
+  &:hover
+    color: $sidebarLinkHoverColor
+    background: $sidebarLinkHoverBackground
+  
+  &.active
+    color: $sidebarLinkActiveColor
+    background: $sidebarLinkActiveBackground
+
+// force label white
+.toggle-btn, .toggle-btn .nav-link
+  color: #fff !important
+
+.main
+  margin-left: 200px
+  transition: all 0.5s ease
+
+/* sidebar toggle logic */
+#sidebar-toggle:checked
+  ~ .sidebar
+    left: -150px
+  
+  ~ .main
+    margin-left: 50px
