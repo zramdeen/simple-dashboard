@@ -6,7 +6,7 @@ body {
 
 /* sidebar general styles */
 .sidebar {
-  font-weight: 200;
+  font-weight: 300;
   width: 200px;
   height: 100%;
   background: #202020;
@@ -44,6 +44,7 @@ body {
   font-size: 20px;
 }
 #sidebar .nav-link span, #sidebar .nav-link i {
+  margin: 0 auto;
   display: inline-block;
 }
 #sidebar .nav-link span {
