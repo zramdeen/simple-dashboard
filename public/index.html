@@ -20,7 +20,7 @@
 </head>
 <body>
   <!-- sidebar -->
-  <input id="sidebar-toggle" type="checkbox">
+  <input id="sidebar-toggle" type="button" onclick="return false;">
   <div id="sidebar" class="sidebar">
     <!-- toggle button -->
     <label for="sidebar-toggle" class="toggle-btn">
@@ -67,7 +67,7 @@
 
   <!-- content area (edit this area) -->
   <div id="main" class="main">
-    <div class="container">
+    <div id="content" class="container">
       <ul class="nav nav-pills">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Active</a>
@@ -125,5 +125,7 @@
   </div>
 
   <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/sidebar.js"></script>  
+
 </body>
 </html>
