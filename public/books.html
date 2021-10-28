@@ -1,0 +1,149 @@
+<!-- 
+  Simple dashmenu for bootstrap
+  - uses icofont library but this can be replaced
+    consider boxicons, font-awesome, etc.
+
+  Author: Zahid Ramdeen
+  Date: 10/26/2021
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/icofont/icofont.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- sidebar -->
+  <input id="sidebar-toggle" type="button" onclick="return false;">
+  <div id="sidebar" class="sidebar minimized-sidebar">
+    <!-- toggle button -->
+    <label for="sidebar-toggle" class="toggle-btn">
+      <div class="nav-link disabled">
+        <span>GenericDash</span>
+        <i class="icofont-navigation-menu"></i>
+      </div>
+    </label>
+
+    <!-- navigation -->
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" href="/index.html">
+          <span>Home</span>
+          <i class="icofont-home"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/profile.html">
+          <span>Profile</span>
+          <i class="icofont-user-alt-3"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/groups.html">
+          <span>Groups</span>
+          <i class="icofont-users-alt-5"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#!">
+          <span>Books</span>
+          <i class="icofont-book"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <span>Settings</span>
+          <i class="icofont-settings-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <span>Logout</span>
+          <i class="icofont-logout"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- content area (edit this area) -->
+  <div id="main" class="main text-light">
+    <div id="content" class="container text-dark">
+      <h1 class="text-light">Books</h1>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="/img/book_cover.jpeg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Book Name</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="/img/book_cover.jpeg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Book Name</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="/img/book_cover.jpeg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Book Name</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="/img/book_cover.jpeg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Book Name</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="/img/book_cover.jpeg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Book Name</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="/img/book_cover.jpeg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Book Name</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/sidebar.js"></script>  
+
+</body>
+</html>

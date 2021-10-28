@@ -1,7 +1,6 @@
 /* settings */
 body {
   background: #232327;
-  color: #fff;
 }
 
 /* sidebar general styles */
@@ -19,7 +18,7 @@ body {
 
 .main {
   position: relative;
-  top: 12px;
+  padding-top: 12px;
   margin-left: 57px;
 }
 
@@ -70,6 +69,21 @@ body {
 
 .maximized-sidebar {
   left: 0;
+}
+
+/* DELETE THIS AFTER - bootstrap fix b/c somehow its broken */
+.card {
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+}
+
+.main .row {
+  margin-bottom: 24px;
+}
+
+.cover-page {
+  height: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */

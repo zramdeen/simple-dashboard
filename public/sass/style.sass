@@ -10,7 +10,6 @@ $sidebarBackground: #202020
   
 body
   background: rgb(35,35,39)
-  color: #fff
 
 /* sidebar general styles */
 .sidebar
@@ -26,7 +25,7 @@ body
 
 .main
   position: relative
-  top: 12px
+  padding-top: 12px
   margin-left: 57px
 
 // style the button
@@ -70,3 +69,17 @@ body
 
 .maximized-sidebar
   left: 0
+
+
+
+/* DELETE THIS AFTER - bootstrap fix b/c somehow its broken */
+.card
+  padding-left: 0
+  padding-right: 0
+  border: none
+
+.main .row
+  margin-bottom: 24px
+
+.cover-page
+  height: inherit
